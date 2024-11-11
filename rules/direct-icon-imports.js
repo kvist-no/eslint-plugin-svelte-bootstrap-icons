@@ -4,7 +4,7 @@ const directIconImportsRule = {
 		docs: {
 			description:
 				'Enforces that svelte-bootstrap-icons are imported using direct file imports to avoid slow running applications due to loading all icons.',
-			recommended: 'error',
+			recommended: true,
 		},
 		fixable: 'code',
 		schema: [],

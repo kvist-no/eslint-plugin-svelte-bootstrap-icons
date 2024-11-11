@@ -1,19 +1,20 @@
 import directIconImports from './rules/direct-icon-imports.js';
 
-export default {
-	name: 'eslint-plugin-svelte-bootstrap-icons',
-	files: ['**/*.svelte'],
+const plugin = {
+	meta: { name: 'eslint-svelte-bootstrap-icons', version: '1.0.0' },
 	rules: { 'direct-icon-imports': directIconImports },
 	configs: {
 		recommended: {
 			plugins: {
-				'svelte-bootstrap-icons': {
-					rules,
+				'eslint-svelte-bootstrap-icons': {
+					rules: { 'direct-icon-imports': directIconImports },
 				},
 			},
 			rules: {
-				'svelte-bootstrap-icons/direct-icon-imports': 'error',
+				'eslint-svelte-bootstrap-icons/direct-icon-imports': 'error',
 			},
 		},
 	},
 };
+
+export default plugin;
