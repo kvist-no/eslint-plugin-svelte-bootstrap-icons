@@ -4,7 +4,8 @@
 	"description": "Plugin for always importing svelte bootstrap icons directly from declaration file instead of the barrel file.",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha tests/**/*.test.js"
+		"test": "mocha tests/**/*.test.js",
+		"prepublishOnly": "npm test"
 	},
 	"type": "module",
 	"repository": {
@@ -17,7 +18,7 @@
 		"svelte-bootstrap-icons",
 		"icons"
 	],
-	"author": "Anders Robstad",
+	"author": "Anders Robstad (https://github.com/AndersRobstad)",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/kvist-no/eslint-plugin-svelte-bootstrap-icons/issues"
